@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Width of the team A layout -->
+    <dimen name="team_A_layout_width">0dp</dimen>
+
+    <!-- Bottom padding of the team name -->
+    <dimen name="team_name_bottom_padding">16dp</dimen>
+
+    <!-- Top padding of the team name -->
+    <dimen name="team_name_top_padding">16dp</dimen>
+
+    <!-- Main text size of app -->
+    <dimen name="main_text_size">14sp</dimen>
+
+    <!-- Score text size-->
+    <dimen name="score_text_size">56sp</dimen>
+
+    <!-- Bottom padding of displayed faults-->
+    <dimen name="faults_bottom_padding">8dp</dimen>
+
+    <!-- Top padding of displayed faults-->
+    <dimen name="faults_top_padding">16dp</dimen>
+
+    <!-- Left margin of button to add points -->
+    <dimen name="point_button_margin_left">24dp</dimen>
+
+    <!-- Right margin of button to add points -->
+    <dimen name="point_button_margin_right">24dp</dimen>
+
+    <!-- Top margin of button to add points -->
+    <dimen name="point_button_margin_top">24dp</dimen>
+
+    <!-- Left margin of button to add faults -->
+    <dimen name="fault_button_margin_left">24dp</dimen>
+
+    <!-- Right margin of button to add faults -->
+    <dimen name="fault_button_margin_right">24dp</dimen>
+
+    <!-- Top margin of button to add faults -->
+    <dimen name="fault_button_margin_top">8dp</dimen>
+
+    <!-- Width of divider layout -->
+    <dimen name="divider_layout_width">1dp</dimen>
+
+    <!-- Width of divider line-->
+    <dimen name="divider_width">1dp</dimen>
+
+    <!-- Width of team B layout -->
+    <dimen name="team_b_layout_width">0dp</dimen>
+
+    <!-- Bottom padding of current serving team message -->
+    <dimen name="serving_message_padding_bottom">16dp</dimen>
+
+    <!-- Top padding of current serving team message -->
+    <dimen name="serving_message_padding_top">16dp</dimen>
+
+    <!-- Bottom margin of reset button -->
+    <dimen name="reset_button_margin_bottom">32dp</dimen>
+</resources>

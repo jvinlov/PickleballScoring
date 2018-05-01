@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context="com.example.android.pickleballscoring.MainActivity">
+
+    <LinearLayout
+        android:baselineAligned="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/team_A_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/teamA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/team_name_bottom_padding"
+                android:paddingTop="@dimen/team_name_top_padding"
+                android:text="@string/team_a_name"
+                android:textColor="@color/main_text_color"
+                android:textSize="@dimen/main_text_size" />
+
+            <TextView
+                android:id="@+id/team_a_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:text="@string/starting_score"
+                android:textColor="@color/score_text_color"
+                android:textSize="@dimen/score_text_size" />
+
+            <TextView
+                android:id="@+id/faultsTeamA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/faults_bottom_padding"
+                android:paddingTop="@dimen/faults_top_padding"
+                android:text="@string/starting_faults"
+                android:textColor="@color/main_text_color"
+                android:textSize="@dimen/main_text_size" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/point_button_margin_left"
+                android:layout_marginEnd="@dimen/point_button_margin_right"
+                android:layout_marginTop="@dimen/point_button_margin_top"
+                android:onClick="addPointTeamA"
+                android:text="@string/point_button_text" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fault_button_margin_left"
+                android:layout_marginEnd="@dimen/fault_button_margin_right"
+                android:layout_marginTop="@dimen/fault_button_margin_top"
+                android:onClick="addFaultTeamA"
+                android:text="@string/fault_button_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/divider_layout_width"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="@dimen/divider_width"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/team_b_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/teamB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/team_name_bottom_padding"
+                android:paddingTop="@dimen/team_name_top_padding"
+                android:text="@string/team_b_name"
+                android:textColor="@color/main_text_color"
+                android:textSize="@dimen/main_text_size" />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:text="@string/starting_score"
+                android:textColor="@color/score_text_color"
+                android:textSize="@dimen/score_text_size" />
+
+            <TextView
+                android:id="@+id/faultsTeamB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/faults_bottom_padding"
+                android:paddingTop="@dimen/faults_top_padding"
+                android:text="@string/starting_faults"
+                android:textColor="@color/main_text_color"
+                android:textSize="@dimen/main_text_size" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/point_button_margin_left"
+                android:layout_marginEnd="@dimen/point_button_margin_right"
+                android:layout_marginTop="@dimen/point_button_margin_top"
+                android:onClick="addPointTeamB"
+                android:text="@string/point_button_text" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fault_button_margin_left"
+                android:layout_marginEnd="@dimen/fault_button_margin_right"
+                android:layout_marginTop="@dimen/fault_button_margin_top"
+                android:onClick="addFaultTeamB"
+                android:text="@string/fault_button_text" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/servingTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/reset"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-medium"
+        android:paddingBottom="@dimen/serving_message_padding_bottom"
+        android:paddingTop="@dimen/serving_message_padding_top"
+        android:text="@string/starting_serve_team_text"
+        android:textColor="@color/main_text_color"
+        android:textSize="@dimen/main_text_size" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/reset_button_margin_bottom"
+        android:onClick="resetScores"
+        android:text="@string/reset_button_text" />
+
+</RelativeLayout>

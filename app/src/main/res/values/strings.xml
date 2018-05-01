@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Name of the app -->
+    <string name="app_name">Pickleball Scoring</string>
+
+    <!-- Name of the first team -->
+    <string name="team_a_name">Team A</string>
+
+    <!-- Starting score of the game -->
+    <string name="starting_score">0</string>
+
+    <!-- Starting faults of the game -->
+    <string name="starting_faults">Faults: 0</string>
+
+    <!-- Text of the button to add points -->
+    <string name="point_button_text">+1 Points</string>
+
+    <!-- Text of the button to add faults -->
+    <string name="fault_button_text">Fault</string>
+
+    <!-- Name of the second team -->
+    <string name="team_b_name">Team B</string>
+
+    <!-- Texting indicating the inital serving team -->
+    <string name="starting_serve_team_text">Team A serving</string>
+
+    <!-- Text of button to reset score -->
+    <string name="reset_button_text">Reset</string>
+
+    <!-- Label text of current team faults -->
+    <string name="faults_text">Faults: </string>
+
+    <!-- Text indicating the currently serving team -->
+    <string name="serving_team_message">Team <xliff:g example="A" id="serving_team">%s</xliff:g> serving</string>
+</resources>
